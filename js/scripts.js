@@ -1,3 +1,7 @@
-var triangle = function (A, B, C) {
-  return "Not a triangle";
-}
+var triangleCheck = function (A,B,C) {
+  if (A === B && B ===C) {
+    return "equilateralTriangle";
+  } else {
+  return "notTriangle";
+  }
+};
