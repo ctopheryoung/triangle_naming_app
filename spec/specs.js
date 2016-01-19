@@ -7,4 +7,11 @@ describe('triangleCheck', function() {
     expect(triangleCheck(2,2,2)).to.equal("equilateralTriangle")
   });
 
+  it("is an isosceles triangle when two sides are equal length", function () {
+    expect(triangleCheck(2,2,3)).to.equal("isoscelesTriangle")
+  });
+
+  it("is a scalene triangle when no sides are equal lenth", function() {
+    expect(triangleCheck(2,3,4)).to.equal("scaleneTriangle")
+  });
 });
